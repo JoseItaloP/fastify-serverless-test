@@ -1,8 +1,12 @@
 import Fastify from 'fastify'
+import UserRoute from './route/user'
+import TaskRoute from './route/task'
 
 const app = Fastify({
   logger: true,
 })
+app.register(UserRoute)
+app.register(TaskRoute)
 
 app.get('/', async (req, reply) => {
   return reply.send('hello')
