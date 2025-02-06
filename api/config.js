@@ -8,7 +8,7 @@ const conectar = async () =>{
 
     const connection = await mysql.createConnection(urlPublic)
 
-    console.log('connected to database')
+    console.log('connected to database: ', process.env.URL_CONNECTION)
     return connection
 }
 
