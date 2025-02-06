@@ -73,11 +73,6 @@ const optCreateUser = {
                 Email: {type: 'string'}
             }
         },
-        response:{
-            500: {
-                type: 'string',
-            }
-        }
     },
     handler: CreateUser,
 }
