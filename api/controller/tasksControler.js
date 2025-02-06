@@ -11,20 +11,6 @@ const getTasks = async (req, reply) => {
   }
 };
 
-// const getTask = async (req, reply) => {
-//   try {
-//     const { id } = req.params;
-//     const con = await connection();
-//     const [result, table] = await con.query(
-//       `SELECT * FROM Tasks WHERE id_task=${id}`
-//     );
-
-//     reply.send(result);
-//   } catch (err) {
-//     reply.code(500).send(err);
-//   }
-// };
-
 const getUserTasks = async (req, reply) => {
   const { id } = req.params;
   console.log('gettasks')
